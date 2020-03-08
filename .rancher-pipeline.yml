@@ -1,0 +1,11 @@
+stages:
+- name: build image
+  steps:
+  - publishImageConfig:
+      dockerfilePath: Dockerfile
+      buildContext: .
+      tag: 2048-game
+      pushRemote: true
+      registry: registry.cn-hangzhou.aliyuncs.com/cyneck/
+timeout: 60
+notification: {}
