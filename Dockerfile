@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM registry.docker-cn.com/library/nginx:alpine
 MAINTAINER Eric Lee
 # 修改源
 RUN echo "http://mirrors.aliyun.com/alpine/latest-stable/main/" > /etc/apk/repositories && \
