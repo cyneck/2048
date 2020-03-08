@@ -2,7 +2,7 @@ stages:
 - name: build image
   steps:
   - publishImageConfig:
-      dockerfilePath: Dockerfile
+      dockerfilePath: ./Dockerfile
       buildContext: .
       tag: 2048-game
       pushRemote: true
